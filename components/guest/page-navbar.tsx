@@ -49,23 +49,25 @@ const PageNavbar = ({ children }: PageNavbarProps) => {
             <MdMenu className="react-icons" />
           </Button>
 
-          <h1 className="text-xl text-white">CategoryName</h1>
+          <h1 className="text-xl">CategoryName</h1>
         </div>
         {/*  */}
         {isOpen && (
           <div
             className={`${navbarClasses} h-[100vh] w-[100vw] bg-background translate-x-0 absolute top-0 left-0 inset-0 transition duration-200 ease-in-out`}
           >
-            <div className="bg-primary !text-white p-4 text-xl flex justify-between items-center">
-              <h2 className="font-semibold !text-white">Category</h2>
-              <Button variant={"none"} onClick={toggleCategory}>
-                <MdClose className="react-icons cursor-pointer" />
-              </Button>
-            </div>
+            <div className="flex flex-col justify-between">
+              <div className="bg-primary !text-white p-4 text-xl flex justify-between items-center w-full sticky top-0 left-0 z-20">
+                <h2 className="font-semibold !text-white">Category</h2>
+                <Button variant={"none"} onClick={toggleCategory}>
+                  <MdClose className="react-icons cursor-pointer !text-white" />
+                </Button>
+              </div>
 
-            <div className="p-4 h-[100vh] scroll-smooth focus:scroll-auto default:overflow-y-scroll-visible overflow-y-scroll scrollbar-thin">
-              {/* Category Component from ./_components */}
-              {children}
+              <div className="p-4 mt-[10vh] h-[90vh] scroll-pt-4 scroll-smooth focus:scroll-auto default:overflow-y-scroll-visible overflow-y-scroll scrollbar-thin bg-background">
+                {/* Category Component from ./_components */}
+                {children}
+              </div>
             </div>
           </div>
         )}

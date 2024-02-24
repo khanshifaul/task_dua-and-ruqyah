@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const SettingsBtn = () => {
   return (
-    <Button variant={"none"} className="md:hidden">
+    <Button variant={"none"} className="md:hidden" onClick={() => {}}>
       <Image
         src="/assets/settings.svg"
         alt="Logo"

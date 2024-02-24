@@ -68,7 +68,7 @@ const AudioBtn = ({ audioSrc }: AudioBtnProps) => {
         />
       </Button>
       <audio ref={audio} src={audioSrc} />
-      <Progress value={progress} className="w-[50%]" />
+      <Progress value={progress} className="w-[50%] hidden" />
     </>
   ) : null;
 };
