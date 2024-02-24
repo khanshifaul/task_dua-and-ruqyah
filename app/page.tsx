@@ -1,3 +1,19 @@
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <div className="mx-auto w-full flex flex-col items-center justify-center rounded-xl p-4 shadow-md text-center space-y-5">
+      <p className="text-green-600 text-xl md:text-2xl text-center font-semibold">
+        Intership Recruitment Task
+      </p>
+      <p className="text-green-600 text-xl md:text-lg">
+        <span>Submitted By: </span>
+        <span className="font-semibold">Md. Shifaul Islam</span>
+      </p>
+      <Button className="hover:scale-105">
+        <Link href={"/duas"}>See Inside</Link>
+      </Button>
+    </div>
+  );
 }

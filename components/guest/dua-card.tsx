@@ -20,6 +20,7 @@ interface DuaCardProps {
   bottom_en: string | null;
   refference_bn: string | null;
   refference_en: string | null;
+  audio: string | null;
 }
 
 const DuaCard = ({
@@ -39,9 +40,10 @@ const DuaCard = ({
   bottom_en,
   refference_bn,
   refference_en,
+  audio,
 }: DuaCardProps) => {
   return (
-    <Card className="flex flex-col gap-2">
+    <Card className="flex flex-col gap-2 bg-background">
       <CardHeader className="flex flex-row gap-2 p-3">
         <Image
           src={"/assets/duacard.svg"}
@@ -79,8 +81,8 @@ const DuaCard = ({
         </p>
       </CardContent>
       <CardFooter className="flex gap-2 justify-between items-center p-3">
-        <AudioBtn />
-        <div className="flex gap-2 justify-end">
+        <AudioBtn audioSrc={audio} />
+        <div className="w-full flex gap-2 justify-end">
           <TooltipBtn label={"Copy"} icon={"/assets/copy.svg"} />
           <TooltipBtn label={"Bookmark"} icon={"/assets/bookmark.svg"} />
           <TooltipBtn label={"Memorize"} icon={"/assets/memorize.svg"} />

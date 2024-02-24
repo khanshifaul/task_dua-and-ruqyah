@@ -45,7 +45,7 @@ const HwNavbar = () => {
   return (
     <div className="relative">
       {/* Desktop Navbar */}
-      <div className="rounded-2xl bg-white p-4 hidden lg:flex flex-col gap-5 min-w-fit h-[90vh] scroll-smooth focus:scroll-auto default:overflow-y-scroll-visible overflow-y-scroll scrollbar-thin shadow">
+      <div className="rounded-2xl bg-background p-4 hidden lg:flex flex-col gap-5 min-w-fit h-[90vh] scroll-smooth focus:scroll-auto default:overflow-y-scroll-visible overflow-y-scroll scrollbar-thin shadow">
         <Logo />
         <nav className="flex flex-col items-start md:items-center gap-5">
           {NavData.map((navData) => (
@@ -63,14 +63,15 @@ const HwNavbar = () => {
         <SupportBtn />
       </div>
       {/* Mobile Navbar */}
-      <div className="block lg:hidden w-full fixed left-0 bottom-0 p-4 rounded-t-3xl bg-white shadow-top">
-        <nav className="flex">
+      <div className="block lg:hidden w-full fixed left-0 bottom-0 p-4 rounded-t-3xl bg-background shadow-top">
+        <nav className="flex justify-center gap-2">
           {NavData.map((navData) => (
             <NavBtn
               key={navData.url}
               iconName={navData.iconName}
               url={navData.url}
               label={navData.label}
+              hidden={navData.hidden}
             />
           ))}
         </nav>

@@ -43,21 +43,21 @@ const PageNavbar = ({ children }: PageNavbarProps) => {
           <SettingsBtn />
         </div>
       </div>
-      <div className="lg:hidden flex flex-nowrap justify-between items-center p-4 rounded-xl gap-5 mt-4 bg-white shadow">
+      <div className="lg:hidden flex flex-nowrap justify-between items-center p-4 rounded-xl gap-5 mt-4 bg-background shadow">
         <div className="flex items-center gap-2">
           <Button variant={"none"} className="p-0" onClick={toggleCategory}>
             <MdMenu className="react-icons" />
           </Button>
 
-          <h1 className="text-xl">Category</h1>
+          <h1 className="text-xl text-white">CategoryName</h1>
         </div>
         {/*  */}
         {isOpen && (
           <div
-            className={`${navbarClasses} h-[100vh] w-[100vw] bg-white translate-x-0 absolute top-0 left-0 inset-0 transition duration-200 ease-in-out`}
+            className={`${navbarClasses} h-[100vh] w-[100vw] bg-background translate-x-0 absolute top-0 left-0 inset-0 transition duration-200 ease-in-out`}
           >
-            <div className="bg-green-600 text-white p-4 text-xl flex justify-between items-center">
-              <h2 className="font-semibold">Category</h2>
+            <div className="bg-primary !text-white p-4 text-xl flex justify-between items-center">
+              <h2 className="font-semibold !text-white">Category</h2>
               <Button variant={"none"} onClick={toggleCategory}>
                 <MdClose className="react-icons cursor-pointer" />
               </Button>

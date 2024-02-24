@@ -18,7 +18,7 @@ const Preview = async () => {
                       "&subcat_" +
                       subcat.subcat_id
                     }
-                    className="flex w-full rounded-xl bg-white p-5 gap-5 shadow"
+                    className="flex w-full rounded-xl bg-background p-5 gap-5 shadow"
                   >
                     <span className="text-green-600">Section: </span>
                     {subcat.subcat_name_en}
@@ -53,6 +53,7 @@ const Preview = async () => {
                           bottom_en={dua.bottom_en}
                           refference_bn={dua.refference_bn}
                           refference_en={dua.refference_en}
+                          audio={dua.audio}
                         />
                       </div>
                     );

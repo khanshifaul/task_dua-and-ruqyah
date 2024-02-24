@@ -3,15 +3,15 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 const SearchBar = () => {
   return (
-    <div className="flex items-center bg-white rounded relative">
+    <div className="flex items-center bg-background rounded relative">
       <Input
         type="text"
-        placeholder="Search"
+        placeholder="Search By Dua Name"
         className="w-full h-10 focus-visible:border-1 focus-visible:border-green-600 focus-visible:ring-0"
       />
       <Button
         variant="none"
-        className="bg-slate-200 md:absolute top-50 right-0.5 border-2 border-white"
+        className="bg-secondary md:absolute top-50 right-0.5 border-2 border-transparent"
       >
         <MdSearch className="react-icons" />
       </Button>

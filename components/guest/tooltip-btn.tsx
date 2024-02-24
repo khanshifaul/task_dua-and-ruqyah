@@ -7,6 +7,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Image from "next/image";
+import { toast } from "sonner";
 
 interface TooltipBtnProps {
   label: string;
@@ -18,7 +19,12 @@ const TooltipBtn = ({ label, icon }: TooltipBtnProps) => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button variant={"none"}>
+          <Button
+            variant={"none"}
+            onClick={() => {
+              toast("Event has been created");
+            }}
+          >
             <Image
               src={icon}
               alt={label}

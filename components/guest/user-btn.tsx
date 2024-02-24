@@ -5,6 +5,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
 const UserBtn = () => {
@@ -19,6 +20,7 @@ const UserBtn = () => {
             height={100}
             className="h-8 w-8"
           />
+          <ChevronDownIcon />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

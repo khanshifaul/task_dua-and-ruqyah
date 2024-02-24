@@ -24,7 +24,7 @@ const Category = async () => {
                 className="border-0 scroll-mt-2"
               >
                 <Link href={"/duas/#cat_" + duaCategory.cat_id}>
-                  <AccordionTrigger className="bg-slate-200 rounded-md p-2">
+                  <AccordionTrigger className="bg-secondary rounded-md p-2">
                     <div className="w-full flex justify-between gap-2">
                       <div className="flex items-center gap-2">
                         <Image
@@ -32,7 +32,7 @@ const Category = async () => {
                           alt={duaCategory.cat_name_en || ""}
                           width={100}
                           height={100}
-                          className="rounded-2xl bg-slate-100 h-12 w-12 p-2 object-contain"
+                          className="rounded-2xl bg-secondary h-12 w-12 p-2 object-contain"
                         />
                         <div className="flex flex-col text-left">
                           <h3 className="text-md text-nowrap">
@@ -60,7 +60,7 @@ const Category = async () => {
                           key={index}
                           className="flex items-baseline border-l-2 border-green-600 border-dotted px-2"
                         >
-                          <div className="rounded-full -translate-x-3 w-2 h-2 bg-green-600 mt-4"></div>
+                          <div className="rounded-full -translate-x-3 w-2 h-2 bg-primary mt-4"></div>
                           <Accordion
                             type="single"
                             collapsible
