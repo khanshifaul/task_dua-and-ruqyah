@@ -3,6 +3,8 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import React from "react";
+
 import "./globals.css";
 export const metadata: Metadata = {
   title: "Dua & Ruqyah",
@@ -21,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-muted w-full overflow-hidden`}>
+      <body
+        className={`${inter.className} bg-muted w-full h-[100vh] overflow-hidden`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
