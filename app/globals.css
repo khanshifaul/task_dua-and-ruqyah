@@ -78,6 +78,9 @@
 .react-icons {
   @apply text-2xl text-foreground;
 }
+.react-icons-primary {
+  @apply text-2xl text-primary-foreground;
+}
 
 .scrollbar-thin {
   scrollbar-width: thin;

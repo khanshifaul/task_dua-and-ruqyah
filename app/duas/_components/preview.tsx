@@ -1,4 +1,4 @@
-import { getDuaCategories } from "@/app/api/duas/route";
+import { getDuaCategories } from "@/app/api/duas";
 import DuaCard from "@/components/guest/dua-card";
 
 const Preview = async () => {

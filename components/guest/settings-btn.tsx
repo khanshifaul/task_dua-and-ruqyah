@@ -1,17 +1,24 @@
+"use client";
+import SettingsTab from "@/app/duas/_components/settings-tab";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Image from "next/image";
-import { Button } from "../ui/button";
 
 const SettingsBtn = () => {
   return (
-    <Button variant={"none"} className="md:hidden" onClick={() => {}}>
-      <Image
-        src="/assets/settings.svg"
-        alt="Logo"
-        width={100}
-        height={100}
-        className="h-5 w-5"
-      />
-    </Button>
+    <Drawer>
+      <DrawerTrigger>
+        <Image
+          src="/assets/settings.svg"
+          alt="Logo"
+          width={100}
+          height={100}
+          className="h-5 w-5"
+        />
+      </DrawerTrigger>
+      <DrawerContent>
+        <SettingsTab />
+      </DrawerContent>
+    </Drawer>
   );
 };
 

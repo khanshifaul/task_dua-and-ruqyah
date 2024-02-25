@@ -13,7 +13,7 @@ const Duas = () => {
     <main className="flex flex-col md:flex-row justify-center gap-5 w-full">
       <div className="flex gap-2 w-full">
         {/* Category Sidebar for Desktop*/}
-        <div className="basis-1/4 hidden lg:flex flex-col rounded-xl bg-background gap-2 w-full h-fit shadow">
+        <div className="basis-2/6 hidden lg:flex flex-col rounded-xl bg-background gap-2 w-full h-fit shadow">
           <h2 className="bg-primary text-white p-2 text-center font-semibold text-xl rounded-t-xl">
             Category
           </h2>
@@ -23,14 +23,17 @@ const Duas = () => {
               placeholder="Search Categories"
               className="w-full focus-visible:border-1 focus-visible:border-green-600 focus-visible:ring-0"
             />
-            <div className="h-[70vh] scroll-smooth focus:scroll-auto default:overflow-y-scroll-visible overflow-y-scroll scrollbar-thin">
+            <div
+              className="h-[70vh] w-full scroll-smooth focus:scroll-auto default:overflow-y-scroll-visible overflow-y-scroll scrollbar-thin 
+            p-4 mt-[1vh] scroll-pt-4  bg-background"
+            >
               <Category />
             </div>
           </div>
         </div>
 
         <Preview />
-        <div className="basis-1/4 hidden 2xl:flex">
+        <div className="basis-2/6 hidden 2xl:flex h-[90vh]">
           <SettingsTab />
         </div>
       </div>

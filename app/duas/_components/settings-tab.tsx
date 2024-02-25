@@ -16,14 +16,14 @@ const SettingsTab = () => {
   const { setTheme } = useTheme();
   const [isDark, setIsDark] = useState(false);
   return (
-    <div className="flex flex-col w-full h-[90vh] rounded-xl bg-background p-5 gap-5 shadow">
+    <div className="flex flex-col w-full h-full rounded-xl bg-background p-5 gap-5 shadow">
       <h3 className={`${inter.className} text-center w-full`}>Settings</h3>
       <Accordion type="single" className="w-full flex flex-col gap-2">
         <SettingsAccordion
           iconName="/assets/language.svg"
           label="Language Settings"
         >
-          <div className="flex justify-center items-center gap-5 p-4 shadow-md rounded-b-2xl">
+          <div className="flex justify-center items-center gap-5 p-4 shadow-md border-b-2 dark:border-l-4 dark:border-primary rounded-b-md">
             <Button>English</Button>
             <Button variant={"outline"}>Bangla</Button>
           </div>
@@ -37,7 +37,7 @@ const SettingsTab = () => {
           iconName="/assets/font.svg"
           label="Appearance Settings"
         >
-          <div className="flex justify-between items-center gap-5 p-4 shadow-md rounded-b-md bg-muted">
+          <div className="flex justify-between items-center gap-5 p-4 shadow-md border-b-2 dark:border-l-4 dark:border-primary rounded-b-md">
             <p>Night Mode</p>
             <Switch
               onClick={() => {
