@@ -21,7 +21,9 @@ const SettingsTab = () => {
     <div className="basis-1/6 flex flex-col gap-5">
       <div className="lg:flex hidden items-center justify-end gap-2">
         <UserBtn />
-        <SettingsBtn />
+        <div className="hidden">
+          <SettingsBtn />
+        </div>
       </div>
       <div className="flex flex-col w-full h-full rounded-xl bg-background p-5 gap-5 shadow">
         <h3 className={`${inter.className} text-center w-full`}>Settings</h3>

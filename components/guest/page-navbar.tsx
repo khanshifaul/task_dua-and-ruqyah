@@ -39,7 +39,7 @@ const PageNavbar = ({ children }: PageNavbarProps) => {
           <div className="hidden md:block">
             <SearchBar />
           </div>
-          <div className="flex xl:hidden">
+          <div className="flex 2xl:hidden">
             <UserBtn />
             <SettingsBtn />
           </div>
