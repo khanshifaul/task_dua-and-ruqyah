@@ -29,7 +29,7 @@ const SettingsAccordion = ({
             height={100}
             className="rounded-full bg-muted h-10 w-10 p-2 object-scale-down"
           />
-          <h2 className="text-md">{label}</h2>
+          <h2 className="text-md text-nowrap mr-2">{label}</h2>
         </div>
         <ChevronDownIcon className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
       </AccordionTrigger>

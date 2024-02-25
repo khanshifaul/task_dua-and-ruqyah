@@ -1,5 +1,5 @@
 "use client";
-import SettingsTab from "@/app/duas/_components/settings-tab";
+import SettingsTab from "@/components/guest/settings-tab";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Image from "next/image";
 

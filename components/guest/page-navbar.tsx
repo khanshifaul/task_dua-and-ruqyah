@@ -39,8 +39,10 @@ const PageNavbar = ({ children }: PageNavbarProps) => {
           <div className="hidden md:block">
             <SearchBar />
           </div>
-          <UserBtn />
-          <SettingsBtn />
+          <div className="flex xl:hidden">
+            <UserBtn />
+            <SettingsBtn />
+          </div>
         </div>
       </div>
       <div className="lg:hidden flex flex-nowrap justify-between items-center p-4 rounded-xl gap-5 mt-4 bg-background shadow">

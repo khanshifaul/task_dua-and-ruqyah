@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
 
+import SettingsTab from "@/components/guest/settings-tab";
 import "./globals.css";
 export const metadata: Metadata = {
   title: "Dua & Ruqyah",
@@ -35,6 +36,9 @@ export default function RootLayout({
           <div className="flex md:px-8 pt-8 px-4 lg:gap-5">
             <HwNavbar />
             {children}
+            <div className="hidden 2xl:flex h-[90vh]">
+              <SettingsTab />
+            </div>
           </div>
           <Toaster />
         </ThemeProvider>
