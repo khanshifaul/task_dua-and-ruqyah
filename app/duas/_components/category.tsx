@@ -1,5 +1,5 @@
 "use server";
-import { getDuaCategories } from "@/app/api/duas/route";
+import { getDuaCategories } from "@/app/api/duas";
 import {
   Accordion,
   AccordionContent,
